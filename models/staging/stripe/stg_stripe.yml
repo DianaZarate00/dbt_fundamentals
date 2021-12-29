@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Data of the orders that has been made.
+    columns: 
+      - name: payment_id
+        description: The primary key for the payment.
+      - name: order_id
+        description: Primary key for orders.
+      - name: payment_method
+        description: Payment method with which the order was paid.
+      - name: status
+        description: "{{doc('payment_status')}}"
+      - name: amount
+        description: The value of the order.
+      - name: created_at
+        description: The date when the order was paid.
